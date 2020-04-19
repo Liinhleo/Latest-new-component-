@@ -12,6 +12,7 @@ class App extends React.Component {
             return (
               <NewsItem
                 key = {index}
+                tag={item.tag}
                 title={item.title}
                 author={item.author}
                 image={item.image}
