@@ -1,21 +1,20 @@
 import React from 'react';
 import './NewsItem.css';
 
-let time = new Date().toLocaleTimeString();
 
 class NewsItem extends React.Component {
   render() {
-    const p_tag ={
-      color:"green" , 
-      fontSize:"13px"
+    const p_tag = {
+      color: "green",
+      fontSize: "13px"
     };
 
-    const p_author ={
-      color:"grey" , 
-      fontSize:"13px"
+    const p_author = {
+      color: "grey",
+      fontSize: "13px"
     };
-    const p_content ={
-      fontSize:"18px"
+    const p_content = {
+      fontSize: "18px"
     };
 
     return (
@@ -23,15 +22,12 @@ class NewsItem extends React.Component {
         <p style={p_tag}>{this.props.tag}</p>
         <h1>{this.props.title}</h1>
         <p style={p_author}>{this.props.author}</p>
-        <p>{time}</p>
         <p style={p_content}>{this.props.content}</p>
-        <img 
-        src={this.props.image} 
-        width = "250"/>
+        <img
+          src={this.props.image}
+          width="250" />
       </div>
     );
-
-   
   }
 }
 
