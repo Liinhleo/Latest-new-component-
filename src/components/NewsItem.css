@@ -1,0 +1,8 @@
+.NewsItem {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.NewsItem >image{
+    width: 300;
+}
