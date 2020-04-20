@@ -1,4 +1,17 @@
 .App {
   text-align: left;
   padding: 20px;
+
+}
+
+.site-layout-content {
+  background: #fff;
+  padding: 24px;
+  min-height: 280px;
+}
+
+.head{
+  font-weight: bolder;
+  font-size: x-large;
+  border-bottom: 2px solid #444;
 }

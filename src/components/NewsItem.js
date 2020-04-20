@@ -1,6 +1,6 @@
 import React from 'react';
 import './NewsItem.css';
-import { Row, Col } from 'antd';
+import { Row, Col,Space } from 'antd';
 
 class NewsItem extends React.Component {
   render() {
@@ -11,11 +11,11 @@ class NewsItem extends React.Component {
             <p className="p_tag">{this.props.tag}</p>
             <h1 className="p_title">{this.props.title}</h1>
 
-            <Row gutter={10}> 
-              <Col span={4} xs={8} lg={4}>
-                <p className="p_author">{this.props.author}</p>
+            <Row className= "body" gutter={5}>  
+              <Col span={6}>         
+                <p className="p_author">{this.props.author}</p>                    
               </Col>
-              <Col span={20} xs={16} lg={20}>             
+              <Col span={18}>
                 <p className="p_timer">{this.props.timer}</p>
               </Col>
             </Row>

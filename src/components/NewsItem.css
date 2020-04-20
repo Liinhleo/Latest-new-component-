@@ -1,6 +1,7 @@
 .NewsItem {
     text-align: left;
     padding: 10px;
+    
 }
 
 .thump{
@@ -9,21 +10,20 @@
 
 .p_tag{
     color: green;
-    font-size: 13px;
+    font-size: 12px;
   };
 
-.p_author{
-    color: grey;
-    font-size: 13px;
-}
-.p_timer{
-    color: grey;
-    font-size: 13px;
+.body{
+    font-size: 12px;
+    color: #939393;
+    margin: 5px 0 0;
+    padding: 0;
 }
 
 .sp_content{
     display: block;
 }
+ 
 
 
 @media screen and (max-width: 760px){
@@ -37,12 +37,7 @@
     .p_title{
         font-size: 15px;
     } 
-    .p_author{
-        color: grey;
-        font-size: 10px;
-    }
-    
-    .p_timer{
+    .body{
         color: grey;
         font-size: 10px;
     }
