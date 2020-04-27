@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import NewsItem from './components/NewsItem.js';
 import data from './dataset-fake.json';
-import { Layout, Breadcrumb } from 'antd';
+import { Layout } from 'antd';
 
 
 class App extends React.Component {
@@ -22,6 +22,7 @@ class App extends React.Component {
                     author={item.author}
                     timer={item.timer}
                     image={item.image}
+                    source={item.source}
                     content={item.content} />
                 )
               })

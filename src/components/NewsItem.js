@@ -1,6 +1,6 @@
 import React from 'react';
 import './NewsItem.css';
-import { Row, Col,Space } from 'antd';
+import { Row, Col } from 'antd';
 
 class NewsItem extends React.Component {
   render() {
@@ -21,6 +21,14 @@ class NewsItem extends React.Component {
             </Row>
 
             <span className="sp_content">{this.props.content}</span>
+            <a
+              href={this.props.source}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+            Read more
+            </a>
+
           </Col>
           <Col span={6} xs={8}>
             <img
@@ -33,4 +41,7 @@ class NewsItem extends React.Component {
   }
 }
 
+function Readmore(){
+  return <p>xem thêm</p>
+}
 export default NewsItem;
